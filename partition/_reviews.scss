@@ -1,0 +1,50 @@
+.reviews{
+    background-image: url("images/reviews_bg.png");
+    @extend %section_bg;
+    
+    h3{
+        @include for_h3($color_white);
+
+        &:after{
+            @include for_h3_after('images/divider_white.png');
+        } 
+    }
+
+    p, span, i{
+        color: $color_white;
+    }
+
+    p{
+        font-family: $font_Gentium;
+        color:  #dee0e0;
+        font-size: 25px;
+        font-weight: 700;
+        line-height: 45px;
+
+        @media (max-width: 576px){
+            font-size: 18px;
+            line-height: 30px;
+        }
+    }
+
+    i{
+        transform: translateX(-30px);
+        font-size: 40px;
+        color:  rgba(243, 245, 245, 0.470588);
+        
+        @media (max-width: 576px){
+            font-size: 25px;
+            transform: translateX(-15px);
+        }
+    }
+    
+    .black {
+        background-color: rgba(0, 0, 0, 0.67);
+        padding: 80px;
+        text-align: center;
+
+        @media (max-width: 576px){
+            padding: 50px;
+        }
+    }
+}

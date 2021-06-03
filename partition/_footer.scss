@@ -1,0 +1,39 @@
+footer{
+    background-color: #191919;
+    padding: 61px 0;
+    text-align: center;
+
+    h3 {
+        color: #fefefe;
+        font-family: $font_Yeseva;
+        font-size: 21px;
+        
+        &:after{
+            @include for_h3_after('images/divider_white.png');
+
+            @media (max-width: 576px){
+                transform: scale(0.5);
+            }
+        }
+    }
+
+    p {
+        color: $color_white;
+        font-size: 16px;
+        @media (max-width: 576px){
+            font-size: 14px;
+        }
+    }
+
+    .opening, .location {
+        padding: 0 70px;
+
+        @media (max-width: 576px){
+            padding: 0 30px;
+        }
+
+        @media (max-width: 768px){
+            padding: 0;
+        }
+    }
+}

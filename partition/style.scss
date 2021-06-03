@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css?family=Gentium+Book+Basic|Lato|Yeseva+One');
+
+$font_Yeseva: 'Yeseva One', cursive;
+$font_Gentium: 'Gentium Book Basic', serif;
+$font_Lato: 'Lato', sans-serif;
+
+$color_gorchizza: rgb(200, 159, 45);
+$color_grey: rgb(76, 76, 76);
+$color_white: rgb(255, 255, 255);
+$color_black: rgb(0, 0, 0);
+$color_vanilla: rgb(251, 247, 192);
+
+@mixin for_h3($color_text) {
+    text-align:center;
+    font-family: $font_Yeseva;
+    font-size:36px;
+    color: $color_text;
+}
+
+@mixin for_h3_after($image){
+    padding: 15px 0;
+    content: url($image);
+    display:block;
+}
+
+%section_bg {
+    background: {
+    repeat: no-repeat;
+    position: center top;
+    size: cover;
+    }
+    
+    @media (max-width:576px){
+        background-size: 1200px;
+    }
+}
+
+%for_h3 {
+    text-align:center;
+}
+
+
+@import "main";
+@import "header";
+@import "about";
+@import "ingredients";
+@import "menu";
+@import "reviews";
+@import "reservation";
+@import "footer";
+
+
+

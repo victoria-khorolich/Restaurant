@@ -1,0 +1,30 @@
+.about{
+    background-image: url("images/about_bg.png");
+    @extend %section_bg;
+    text-align:center;
+    padding: 55px 0 30px;
+
+    @media (max-width: 576px){
+        padding: 30px 0 30px;
+    }
+
+    h3 {
+        @include for_h3($color_gorchizza);
+               
+        &::after {
+            @include for_h3_after('images/divider.png');
+        }
+    }
+
+    p{
+       margin: 15px 0 52px;
+
+       @media (max-width: 576px){
+           margin: 15px 0 25px;
+       }
+    }
+
+    &__dish {
+        width: 100%;
+    }
+}

@@ -1,0 +1,56 @@
+.menu{
+    background-image: url("images/menu_bg.png");
+    @extend %section_bg;
+
+    h3{
+        @include for_h3($color_gorchizza);
+        &::after{
+            @include for_h3_after("images/divider.png");
+        }
+    }
+    
+    .col_menu{
+        padding: 0 70px;
+
+        @media (max-width: 576px){
+            padding: 0;
+        }
+    }
+
+    .dish{
+        list-style-type: none;
+
+        &__item{
+           padding: 7px;
+        }
+
+        &__title{
+            font-family: $font_Yeseva;
+            color:  #c89f2d;
+            font-size: 21px;
+            text-align: justify;
+            border-bottom: #c89f2d 1px solid; 
+            padding: 7px 0;
+            display: flex;
+            justify-content: space-between;
+        }
+       
+        &--special{
+            border: #c89f2d 1px solid;
+            position: relative;
+
+            &::after{
+                content: "Special";
+                display: block;
+                background-color: #c89f2d;
+                color: #f8fafa;
+                position: absolute;
+                right: -1px;
+                top: -26px;
+
+                padding: 0 7px;
+                border: #c89f2d 1px solid;
+            }
+        }
+    }
+}

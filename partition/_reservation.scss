@@ -1,0 +1,68 @@
+.reservation{
+    background-image: url("images/about_bg.png");
+    @extend %section_bg;
+    
+    .form{
+        padding: 0 77px;
+    }
+
+    h3{
+        @include for_h3($color_gorchizza);
+
+        &::after{
+            @include for_h3_after("images/divider.png");
+        }
+    }
+
+    p{
+        text-align: center;
+        position: relative;
+    }
+
+    form{ 
+        input{
+            font-style: italic;
+            height: 34px;
+            border: $color_grey solid 1px;
+            padding: 11px 14px;
+            display:block;
+            width:100%;
+            
+            &:focus{
+                border: $color_gorchizza solid 1px;
+                outline: none;
+            }
+        }
+
+        p {
+            text-align:left;
+            color:  #c9a131;
+            font-size: 14px;
+            font-weight: 700;
+
+        }
+               
+        button{
+            display: block;
+            width: 200px;
+            height: 34px;
+            background-color: $color_gorchizza;
+            color: $color_white;
+            text-align: center;
+            border: $color_gorchizza solid 1px;
+            margin: 15px auto;
+        }
+    }
+
+    i {
+        position:absolute;
+        right:25px;
+        bottom:9px;
+        color: $color_grey;
+    }
+
+    img {
+        width:100%;
+    }
+}
+

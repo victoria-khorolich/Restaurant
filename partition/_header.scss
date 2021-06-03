@@ -1,0 +1,109 @@
+header{
+    padding-bottom: 98px;
+    background-image: url("images/header_bg.png");
+    @extend %section_bg;
+
+    img {
+        @media (max-width: 576px){
+            display: block;
+            margin: 0 auto;
+        }
+    }
+
+    h1{
+        font-family: $font_Yeseva;
+        color:  $color_white;
+        font-size: 90px;
+        font-weight: 400;
+        text-align: center;
+        text-shadow: 0px 1px 2px rgba(1, 1, 1, 0.64);
+        margin: 80px 0;
+
+            &::after{
+                content:"";
+                display:block;
+                margin: 30px auto;
+                width: 230px;
+                height:45px;
+                background: {
+                    image: url("images/divider_header.png");
+                    size: 100%;
+                    repeat:no-repeat;
+                }
+                @media (max-width:576px){
+                    width: 150px;
+
+                }
+            }
+
+            @media (max-width:576px){
+                font-size: 40px;
+                margin: 70px auto;
+            }
+    }
+
+    button{
+        padding: 21px 52px;
+        cursor: pointer;
+        margin: 0 15px;
+        color: $color_white;
+        background-color:  rgba(255, 255, 255, 0.7);
+        text-transform: uppercase;
+        font-size:18px;
+        font-weight: 400;
+
+        border: {
+            width: 1px;
+            color:$color_white;
+            style: solid;
+        }
+
+        @media (max-width:576px){
+            padding: 15px 25px;
+            font-size: 16px;
+        }
+
+        &:hover{
+            background-color:  rgba(0, 0, 0, 0.7);
+            opacity: 0.8;
+            border-color: $color_black;
+                
+        }
+    }
+}
+.nav{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+
+    @media (max-width:576px){
+        display:none;
+    }
+
+    li{
+        padding: 40px 0 0 0;
+        border-top:
+        {
+            width: 6px;
+            color: transparent;
+            style: solid;
+        }
+
+        &:hover {
+            border-top-color:#ffffff;
+            opacity: 0.71;
+        }
+    }
+
+    a{
+        text-decoration: none;
+        color: $color_white;
+        
+        font: {
+            family: $font_Gentium;
+            weight: 700;
+            size: 21px;
+        }
+    }
+}

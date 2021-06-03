@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    padding: 100px 0;
+
+    @media (max-width: 576px){
+       padding: 50px;
+    }
+}
+
+body{
+    font-family: $font_Lato;
+    font-size: 16px;
+    color: $color_grey;
+    line-height: 24px;
+}
+

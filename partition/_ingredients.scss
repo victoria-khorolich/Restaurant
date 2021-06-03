@@ -1,0 +1,42 @@
+.ingredients{
+    background-image: url("images/ingredients_bg.png");
+    @extend %section_bg;
+
+    h3{
+        @include for_h3($color_white);
+
+        &:after{
+            @include for_h3_after('images/divider_white.png');
+        } 
+    }
+
+    p{
+        color: $color_white;
+    }
+
+    .images{
+       img{
+           height: 100px;
+           padding: 0 17px;
+
+           @media (max-width: 576px){
+            height: 75px;
+        }
+
+        @media (max-width:1200px) {
+            height: 80px;
+            padding: 0 10px;
+        }
+       }
+    }
+
+    .black{
+        background-color: rgba(0, 0, 0, 0.67);
+        padding: 80px;
+        text-align: center;
+        
+        @media (max-width: 576px){
+            padding: 25px;
+        }
+    }
+}
