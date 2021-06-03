@@ -1,0 +1,317 @@
+@import url("https://fonts.googleapis.com/css?family=Gentium+Book+Basic|Lato|Yeseva+One");
+header, .about, .ingredients, .menu, .reviews, .reservation {
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover; }
+  @media (max-width: 576px) {
+    header, .about, .ingredients, .menu, .reviews, .reservation {
+      background-size: 1200px; } }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+section {
+  padding: 100px 0; }
+  @media (max-width: 576px) {
+    section {
+      padding: 50px; } }
+
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  color: #4c4c4c;
+  line-height: 24px; }
+
+header {
+  padding-bottom: 98px;
+  background-image: url(images/header_bg.png); }
+  @media (max-width: 576px) {
+    header img {
+      display: block;
+      margin: 0 auto; } }
+  header h1 {
+    font-family: "Yeseva One", cursive;
+    color: white;
+    font-size: 90px;
+    font-weight: 400;
+    text-align: center;
+    text-shadow: 0px 1px 2px rgba(1, 1, 1, 0.64);
+    margin: 80px 0; }
+    header h1::after {
+      content: "";
+      display: block;
+      margin: 30px auto;
+      width: 230px;
+      height: 45px;
+      background-image: url(images/divider_header.png);
+      background-size: 100%;
+      background-repeat: no-repeat; }
+      @media (max-width: 576px) {
+        header h1::after {
+          width: 150px; } }
+    @media (max-width: 576px) {
+      header h1 {
+        font-size: 40px;
+        margin: 70px auto; } }
+  header button {
+    padding: 21px 52px;
+    cursor: pointer;
+    margin: 0 15px;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.7);
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 400;
+    border-width: 1px;
+    border-color: white;
+    border-style: solid; }
+    @media (max-width: 576px) {
+      header button {
+        padding: 15px 25px;
+        font-size: 16px; } }
+    header button:hover {
+      background-color: rgba(0, 0, 0, 0.7);
+      opacity: 0.8;
+      border-color: black; }
+
+.nav {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  height: 100px; }
+  @media (max-width: 576px) {
+    .nav {
+      display: none; } }
+  .nav li {
+    padding: 40px 0 0 0;
+    border-top-width: 6px;
+    border-top-color: transparent;
+    border-top-style: solid; }
+    .nav li:hover {
+      border-top-color: #ffffff;
+      opacity: 0.71; }
+  .nav a {
+    text-decoration: none;
+    color: white;
+    font-family: "Gentium Book Basic", serif;
+    font-weight: 700;
+    font-size: 21px; }
+
+.about {
+  background-image: url(images/about_bg.png);
+  text-align: center;
+  padding: 55px 0 30px; }
+  @media (max-width: 576px) {
+    .about {
+      padding: 30px 0 30px; } }
+  .about h3 {
+    text-align: center;
+    font-family: "Yeseva One", cursive;
+    font-size: 36px;
+    color: #c89f2d; }
+    .about h3::after {
+      padding: 15px 0;
+      content: url("images/Divider.png");
+      display: block; }
+  .about p {
+    margin: 15px 0 52px; }
+    @media (max-width: 576px) {
+      .about p {
+        margin: 15px 0 25px; } }
+  .about__dish {
+    width: 100%; }
+
+.ingredients {
+  background-image: url(images/ingredients_bg.png); }
+  .ingredients h3 {
+    text-align: center;
+    font-family: "Yeseva One", cursive;
+    font-size: 36px;
+    color: white; }
+    .ingredients h3:after {
+      padding: 15px 0;
+      content: url("images/Divider_white.png");
+      display: block; }
+  .ingredients p {
+    color: white; }
+  .ingredients .images img {
+    height: 100px;
+    padding: 0 17px; }
+    @media (max-width: 576px) {
+      .ingredients .images img {
+        height: 75px; } }
+    @media (max-width: 1200px) {
+      .ingredients .images img {
+        height: 80px;
+        padding: 0 10px; } }
+  .ingredients .black {
+    background-color: rgba(0, 0, 0, 0.67);
+    padding: 80px;
+    text-align: center; }
+    @media (max-width: 576px) {
+      .ingredients .black {
+        padding: 25px; } }
+
+.menu {
+  background-image: url(images/menu_bg.png); }
+  .menu h3 {
+    text-align: center;
+    font-family: "Yeseva One", cursive;
+    font-size: 36px;
+    color: #c89f2d; }
+    .menu h3::after {
+      padding: 15px 0;
+      content: url("images/Divider.png");
+      display: block; }
+  .menu .col_menu {
+    padding: 0 70px; }
+    @media (max-width: 576px) {
+      .menu .col_menu {
+        padding: 0; } }
+  .menu .dish {
+    list-style-type: none; }
+    .menu .dish__item {
+      padding: 7px; }
+    .menu .dish__title {
+      font-family: "Yeseva One", cursive;
+      color: #c89f2d;
+      font-size: 21px;
+      text-align: justify;
+      border-bottom: #c89f2d 1px solid;
+      padding: 7px 0;
+      display: flex;
+      justify-content: space-between; }
+    .menu .dish--special {
+      border: #c89f2d 1px solid;
+      position: relative; }
+      .menu .dish--special::after {
+        content: "Special";
+        display: block;
+        background-color: #c89f2d;
+        color: #f8fafa;
+        position: absolute;
+        right: -1px;
+        top: -26px;
+        padding: 0 7px;
+        border: #c89f2d 1px solid; }
+
+.reviews {
+  background-image: url(images/reviews_bg.png); }
+  .reviews h3 {
+    text-align: center;
+    font-family: "Yeseva One", cursive;
+    font-size: 36px;
+    color: white; }
+    .reviews h3:after {
+      padding: 15px 0;
+      content: url("images/Divider_white.png");
+      display: block; }
+  .reviews p, .reviews span, .reviews i {
+    color: white; }
+  .reviews p {
+    font-family: "Gentium Book Basic", serif;
+    color: #dee0e0;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 45px; }
+    @media (max-width: 576px) {
+      .reviews p {
+        font-size: 18px;
+        line-height: 30px; } }
+  .reviews i {
+    transform: translateX(-30px);
+    font-size: 40px;
+    color: rgba(243, 245, 245, 0.470588); }
+    @media (max-width: 576px) {
+      .reviews i {
+        font-size: 25px;
+        transform: translateX(-15px); } }
+  .reviews .black {
+    background-color: rgba(0, 0, 0, 0.67);
+    padding: 80px;
+    text-align: center; }
+    @media (max-width: 576px) {
+      .reviews .black {
+        padding: 50px; } }
+
+.reservation {
+  background-image: url(images/about_bg.png); }
+  .reservation .form {
+    padding: 0 77px; }
+  .reservation h3 {
+    text-align: center;
+    font-family: "Yeseva One", cursive;
+    font-size: 36px;
+    color: #c89f2d; }
+    .reservation h3::after {
+      padding: 15px 0;
+      content: url("images/Divider.png");
+      display: block; }
+  .reservation p {
+    text-align: center;
+    position: relative; }
+  .reservation form input {
+    font-style: italic;
+    height: 34px;
+    border: #4c4c4c solid 1px;
+    padding: 11px 14px;
+    display: block;
+    width: 100%; }
+    .reservation form input:focus {
+      border: #c89f2d solid 1px;
+      outline: none; }
+  .reservation form p {
+    text-align: left;
+    color: #c9a131;
+    font-size: 14px;
+    font-weight: 700; }
+  .reservation form button {
+    display: block;
+    width: 200px;
+    height: 34px;
+    background-color: #c89f2d;
+    color: white;
+    text-align: center;
+    border: #c89f2d solid 1px;
+    margin: 15px auto; }
+  .reservation i {
+    position: absolute;
+    right: 25px;
+    bottom: 9px;
+    color: #4c4c4c; }
+  .reservation img {
+    width: 100%; }
+
+footer {
+  background-color: #191919;
+  padding: 61px 0;
+  text-align: center; }
+  footer h3 {
+    color: #fefefe;
+    font-family: "Yeseva One", cursive;
+    font-size: 21px; }
+    footer h3:after {
+      padding: 15px 0;
+      content: url("images/Divider_white.png");
+      display: block; }
+      @media (max-width: 576px) {
+        footer h3:after {
+          transform: scale(0.5); } }
+  footer p {
+    color: white;
+    font-size: 16px; }
+    @media (max-width: 576px) {
+      footer p {
+        font-size: 14px; } }
+  footer .opening, footer .location {
+    padding: 0 70px; }
+    @media (max-width: 576px) {
+      footer .opening, footer .location {
+        padding: 0 30px; } }
+    @media (max-width: 768px) {
+      footer .opening, footer .location {
+        padding: 0; } }
+
+/*# sourceMappingURL=style.css.map */
